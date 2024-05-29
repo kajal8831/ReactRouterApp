@@ -8,6 +8,10 @@ const Home = () => {
     const GoToParent = () => {
         navigate('/Parent');
     }
+
+    const CheckApiCall = () => {
+        navigate('/ApiCalling');
+    }
     
     return(
         <div>
@@ -18,6 +22,7 @@ const Home = () => {
             <Link to="/learning">Go to Learners page</Link><br/>
             <Link to="/classlearning">Go to Class Learners page</Link><br/><br/>
             <button onClick={GoToParent}>GoToParent</button>
+            <button onClick={CheckApiCall}>ApiCall</button>
         </div>
     )
 }

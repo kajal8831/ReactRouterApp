@@ -6,6 +6,7 @@ import Contact from './Components/Contact'
 import Learning from './Components/Learning';
 import ClassLearning from './Components/ClassLearning';
 import Parent from './Components/Parent'; // Import the Parent component
+import ApiCalling from './Components/ApiCalling';
 import './App.css';
 
 const App = () => {
@@ -49,6 +50,7 @@ const App = () => {
         {/* multiple props for class component */}
         <Route path="/ClassLearning" element={<ClassLearning channel={channel} youtuber={youtuber} />} />
         <Route path="/Parent" element={<Parent />} /> {/* Define route for "/Parent" */}
+        <Route path="/ApiCalling" element={<ApiCalling />} />
       </Routes>
     </div>
   );
